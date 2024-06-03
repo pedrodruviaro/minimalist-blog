@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -15,4 +17,48 @@ html {
   @media (min-width: 70em) {
     font-size: 100%;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
