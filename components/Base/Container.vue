@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const props = withDefaults(
   defineProps<{
-    as?: string
+    as?: string;
   }>(),
   {
     as: "div",
-  }
-)
+  },
+);
 </script>
 
 <template>
